@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cn_fz_14: 14px;
+  --cn_fz_15: 15px;
+  --cn_fz_16: 16px;
+  --cn_fz_18: 18px;
+  --cn_fz_19: 19px;
+  --cn_fz_21: 21px;
+  --cn_fz_26: 26px;
+  --cn_fz_28: 28px;
+  --cn_fz_36: 36px;
+  --cn_fz_44: 44px;
+  --cn_fz_52: 52px;
+  --cn_fz_64: 64px;
+}
+
+/* Apply Lexend font to html/body */
+html, body {
+  font-family: var(--font-lexend), sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+h1, h2{
+  font-family: var(--font-sora);
+}
+
+@layer utilities {
+  .cn-h1 {
+    font-size: var(--cn_fz_64);
+    font-weight: var(--cn_fw_extra_bold);
+  }
+
+  .cn-h2 {
+    font-size: var(--cn_fz_28);
+    font-weight: var(--cn_fw_bold);
+  }
+
+  .cn-h3 {
+    font-size: var(--cn_fz_21);
+    font-weight: var(--cn_fw_bold);
+  }
+
+  .cn-body {
+    font-size: var(--cn_fz_16);
+    font-weight: var(--cn_fw_regular);
+  }
+
+  .cn-body-sm {
+    font-size: var(--cn_fz_14);
+    font-weight: var(--cn_fw_regular);
+  }
+
+  .cn-body-lg {
+    font-size: var(--cn_fz_18);
+    font-weight: var(--cn_fw_medium);
+  }
+}
